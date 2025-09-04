@@ -32,7 +32,7 @@ header {
     background-color: blue;
     width: 2rem;
     height: 2rem;
-    margin right: .5rem;
+    margin-right: .5rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -41,8 +41,42 @@ header {
     font-weight: bold;
 }
 
+.titulo-cabecalho {
+    /* border: .1rem solid greenyellow; */
+    flex: 1;
+}
+
+.menu-hamburguer {
+    /* border: .1rem solid red; */
+    border-radius: 100%;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-hamburguer:hover {
+    background-color: #5e5e6e;
+}
+
+.menu-hamburguer:hover i {
+    color: #ddd;
+}
+
+.menu-hamburguer i:hover {
+    color: white
+}
+
+.menu-hamburguer i {
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
 section {
-    border: .1rem solid blue;
+    /* border: .1rem solid blue; */
     display: flex;
     flex: 1;
 }
@@ -105,4 +139,10 @@ footer {
     color: #eee;
     height: 3rem;
     padding: .7rem;
+}
+
+@media(max-width: 576px) {
+    .titulo-cabecalho {
+        opacity: 0;
+    }
 }
